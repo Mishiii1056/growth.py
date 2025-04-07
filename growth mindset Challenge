@@ -1,0 +1,42 @@
+import streamlit as st
+import random
+
+# Page configuration
+st.set_page_config(page_title="Growth Mindset Challenge", layout="centered")
+
+# Title and introduction
+st.title("🌱 Growth Mindset Challenge")
+st.write("Welcome! Let’s build a strong and positive mindset together.")
+
+# What is a Growth Mindset?
+st.header("🧠 What is a Growth Mindset?")
+st.write("""
+A growth mindset means believing that your abilities and intelligence can be improved with effort, learning, and persistence.
+This mindset encourages embracing challenges and learning from mistakes.
+""")
+
+st.markdown("""
+**Core Principles:**
+- Embrace challenges
+- Learn from feedback
+- Persist through obstacles
+- Value effort over results
+""")
+
+# Daily checklist
+st.header("✅ Daily Growth Mindset Checklist")
+st.checkbox("I tried something challenging today")
+st.checkbox("I learned from a mistake or failure")
+st.checkbox("I encouraged someone else today")
+st.checkbox("I gave or received constructive feedback")
+st.checkbox("I reflected on how I can improve")
+
+# Inspirational quote
+quotes = [
+    "“Failure is simply the opportunity to begin again, this time more intelligently.” – Henry Ford",
+    "“Challenges are what make life interesting. Overcoming them is what makes life meaningful.” – Joshua Marine",
+    "“It's not that I'm so smart, it's just that I stay with problems longer.” – Albert Einstein"
+]
+
+st.header("💬 Inspirational Quote")
+st.success(random.choice(quotes))
